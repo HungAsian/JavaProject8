@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="243.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p8_3_c00181055.FXMLController">
+   <children>
+      <Label fx:id="timeField" alignment="CENTER" layoutX="40.0" layoutY="14.0" prefHeight="50.0" prefWidth="530.0">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateField" alignment="CENTER" layoutX="40.0" layoutY="128.0" prefHeight="50.0" prefWidth="530.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="timeZoneBox" layoutX="379.0" layoutY="88.0" onAction="#changeTimeZone" prefHeight="26.0" prefWidth="130.0" />
+      <ComboBox fx:id="timeStyleBox" layoutX="85.0" layoutY="88.0" onAction="#changeTimeStyle" prefHeight="26.0" prefWidth="130.0" />
+      <ComboBox fx:id="dateStyleBox" layoutX="85.0" layoutY="194.0" onAction="#changeDateStyle" prefHeight="26.0" prefWidth="130.0" />
+      <ComboBox fx:id="localeBox" layoutX="379.0" layoutY="194.0" onAction="#changeLocale" prefHeight="26.0" prefWidth="130.0" />
+      <Label alignment="CENTER" layoutX="379.0" layoutY="72.0" prefHeight="10.0" prefWidth="130.0" text="Time Zone:" />
+      <Label alignment="CENTER" layoutX="85.0" layoutY="72.0" prefHeight="10.0" prefWidth="130.0" text="Time Style:" />
+      <Label alignment="CENTER" layoutX="85.0" layoutY="178.0" prefHeight="10.0" prefWidth="130.0" text="Date Style:" />
+      <Label alignment="CENTER" layoutX="379.0" layoutY="178.0" prefHeight="10.0" prefWidth="130.0" text="Locale:" />
+   </children>
+</AnchorPane>
